@@ -10,3 +10,4 @@ function bind(){
 }
 
 window.onload=bind;
+
