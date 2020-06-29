@@ -15,5 +15,6 @@ function sendAjax(){
 
 function handle(response){
     console.log("response received");
-    console.log(response);
+    $("#result").empty();
+    $("#result").append(response);
 }
