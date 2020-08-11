@@ -1,12 +1,16 @@
 const express = require("express");
 let router= express.Router();
 const validateProduct =require("../../middlewares/validateProduct")
+const auth =require("../../middlewares/auth")
+const admin= require("../../middlewares/admin")
+
 var { Product }=require("../../models/product");
 const { response } = require("../../app");
 
 //get all products
 
 router.get("/", async (req,res)=>{
+    console.log(req.user);
     let page= Number(req.query.page? req.query.page:1);
     let perPage= Number(req.query.perPage? req.query.perPage: 10);
     let skipRecords=perPage*(page-1)
@@ -35,13 +39,13 @@ router.put("/:id", validateProduct ,async(req,res)=>{
     return res.send(product);
 })
 //delete record from db
-router.delete("/:id", async(req,res)=>{
+router.delete("/:id",auth, admin, async(req,res)=>{
     let product= await Product.findByIdAndDelete(req.params.id);
     return res.send(product);
 })
 
 //insert new record into db
-router.post("/", validateProduct,async(req,res)=>{
+router.post("/", auth, validateProduct,async(req,res)=>{
     
     let product = new Product();
     product.name=req.body.name;
