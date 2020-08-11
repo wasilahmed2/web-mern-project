@@ -1,0 +1,89 @@
+doctype html
+head
+  title RBTG LoginPage
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1')
+  // ===============================================================================================
+  link(rel='icon' type='image/png' href='images/icons/favicon.ico')
+  style
+     include loginpage/images/icons/favicon.ico
+  // ===============================================================================================
+  link(rel='stylesheet' type='text/css' href='vendor/bootstrap/css/bootstrap.min.css')
+  style
+     include loginpage/vendor/bootstrap/css/bootstrap.min.css
+  // ===============================================================================================
+  link(rel='stylesheet' type='text/css' href='fonts/font-awesome-4.7.0/css/font-awesome.min.css')
+  style
+     include loginpage/fonts/font-awesome-4.7.0/css/font-awesome.min.css
+  // ===============================================================================================
+  link(rel='stylesheet' type='text/css' href='fonts/iconic/css/material-design-iconic-font.min.css')
+  style
+     include loginpage/fonts/iconic/css/material-design-iconic-font.min.css
+  // ===============================================================================================
+  link(rel='stylesheet' type='text/css' href='vendor/animate/animate.css')
+  style
+     include loginpage/vendor/animate/animate.css
+  // ===============================================================================================
+  link(rel='stylesheet' type='text/css' href='vendor/css-hamburgers/hamburgers.min.css')
+  style
+     include loginpage/vendor/css-hamburgers/hamburgers.min.css
+  // ===============================================================================================
+  link(rel='stylesheet' type='text/css' href='vendor/animsition/css/animsition.min.css')
+  style
+     include loginpage/vendor/animsition/css/animsition.min.css
+  // ===============================================================================================
+  link(rel='stylesheet' type='text/css' href='vendor/select2/select2.min.css')
+  style
+     include loginpage/vendor/select2/select2.min.css
+  // ===============================================================================================
+  link(rel='stylesheet' type='text/css' href='vendor/daterangepicker/daterangepicker.css')
+  style
+     include loginpage/vendor/daterangepicker/daterangepicker.css
+  // ===============================================================================================
+  link(rel='stylesheet' type='text/css' href='css/util.css')
+  style
+     include loginpage/css/util.css
+  link(rel='stylesheet' type='text/css' href='css/main.css')
+  style
+     include loginpage/css/main.css
+  // ===============================================================================================
+.limiter
+  .container-login100(style="background-image: url('https://i.imgur.com/4sHIdzT.jpg');")
+    .wrap-login100
+      form.login100-form.validate-form
+        span.login100-form-logo(style='background-image: url(https://i.imgur.com/X04zEE7.jpg); ')
+        span.login100-form-title.p-b-34.p-t-27
+          | Log in
+        .wrap-input100.validate-input(data-validate='Enter username')
+          input#usernameText.input100(type='text' name='username' placeholder='Username')
+          span.focus-input100(data-placeholder='')
+        .wrap-input100.validate-input(data-validate='Enter password')
+          input#passText.input100(type='password' name='pass' placeholder='Password')
+          span.focus-input100(data-placeholder='')
+        .contact100-form-checkbox
+          input#ckb1.input-checkbox100(type='checkbox' name='remember-me')
+          label.label-checkbox100(for='ckb1')
+            | Remember me
+        .container-login100-form-btn
+          button#loginbtn.login100-form-btn
+            | Login
+        .text-center.p-t-90
+          a.txt1(href='#')
+            | Forgot Password?
+#dropDownSelect1
+// ===============================================================================================
+script(src='loginpage/vendor/jquery/jquery-3.2.1.min.js')
+// ===============================================================================================
+script(src='loginpage/vendor/animsition/js/animsition.min.js')
+// ===============================================================================================
+script(src='loginpage/vendor/bootstrap/js/popper.js')
+script(src='loginpage/vendor/bootstrap/js/bootstrap.min.js')
+// ===============================================================================================
+script(src='loginpage/vendor/select2/select2.min.js')
+// ===============================================================================================
+script(src='loginpage/vendor/daterangepicker/moment.min.js')
+script(src='loginpage/vendor/daterangepicker/daterangepicker.js')
+// ===============================================================================================
+script(src='loginpage/vendor/countdowntime/countdowntime.js')
+// ===============================================================================================
+script(src='loginpage/js/main.js')
