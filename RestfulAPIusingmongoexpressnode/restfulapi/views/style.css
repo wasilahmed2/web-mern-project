@@ -367,3 +367,9 @@ h3 {
   margin: 20px 0;
   text-align: center;
 }
+
+.loginbtn {
+  border-style: none;
+  background-color: rgba(0, 0, 0, 0);
+  font-weight: bold;
+}

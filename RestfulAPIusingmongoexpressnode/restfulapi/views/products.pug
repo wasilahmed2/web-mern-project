@@ -9,14 +9,11 @@ head
   script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js')
   script(src='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js')
   script(src='https://code.jquery.com/jquery-3.5.1.min.js')
-  script(src='./script.js')
   link(href='https://fonts.googleapis.com/css2?family=Poppins&display=swap' rel='stylesheet')
   link(rel='stylesheet' href='https://use.fontawesome.com/releases/v5.5.0/css/all.css')
-  link(rel='stylesheet' href='./style.css')
   style
      include style.css
   link(href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet')
-  link(rel='stylesheet' href='assets/styles/production/main.min.css')
   script(src='https://use.fontawesome.com/ca5187534d.js')
   link(href='https://fonts.googleapis.com/css?family=Montserrat|Roboto+Condensed:700' rel='stylesheet')
   title RB Tech
@@ -46,7 +43,7 @@ head
         ul.loginnav.nav.navbar-nav.navbar-right
           i.fa.fa-sign-in.fa-lg(aria-hidden='true' style='margin-top: 3px;')
           li
-            a.loginbtn(href='/loginpage/index.html') Login
+            a.loginbtn(type='submit' href='./login') Logout
 h1.product-title Products
 section.products-card
   .card
